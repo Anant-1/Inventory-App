@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/image_item"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        tools:src="@drawable/add_photo" />
+
+    <TextView
+        android:id="@+id/product_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_item"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2b3d4d"
+        tools:text="Maggi" />
+
+    <TextView
+        android:id="@+id/product_com_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_item"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#aeb6bd"
+        tools:text="Nestle" />
+
+    <TextView
+        android:id="@+id/prod_stock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_item"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-medium"
+        android:paddingRight="4dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        tools:text="4" />
+
+
+</RelativeLayout>

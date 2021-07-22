@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--    Image Category-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Add Image -->
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/add_photo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/add_image"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-medium"
+                android:text="Add Image"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <!--    Product Name Category   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <!--   Label     -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Name"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <!-- Input Fields -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+
+                <!--Product Name Field -->
+                <EditText
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Product Name"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <!--Product Company Name Field -->
+                <EditText
+                    android:id="@+id/product_com_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Product Company Name"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--  Supplier Category -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <!--   Label     -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Supplier"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <!--Input Category -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:paddingLeft="4dp">
+                <!-- Supplier name field -->
+                <EditText
+                    android:id="@+id/supp_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Supplier Name"
+                    android:inputType="textCapWords"
+                    android:textAppearance="?android:textAppearanceMedium" />
+                <!-- Supplier email field -->
+                <EditText
+                    android:id="@+id/supp_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Supplier Email"
+                    android:inputType="textEmailAddress"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Price Category -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--   Label     -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Unit Price"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <!-- Input fields -->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:paddingLeft="4dp">
+
+                <!-- Weight Field -->
+                <EditText
+                    android:id="@+id/edit_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <!-- Units for weight(Kg) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingTop="16dp"
+                    android:paddingRight="16dp"
+                    android:text="RS"
+                    android:textAppearance="?android:textAppearanceSmall" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!--   Label     -->
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium"
+                android:paddingTop="16dp"
+                android:text="Stock"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:paddingLeft="4dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/plus_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="+"
+                    android:theme="@style/Theme.MaterialComponents"
+                    app:cornerRadius="50dp" />
+
+                <TextView
+                    android:id="@+id/zero_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="1"
+                    android:textAppearance="?android:textAppearanceMedium" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/neg_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="-"
+                    android:textStyle="bold"
+                    android:theme="@style/Theme.MaterialComponents"
+                    app:cornerRadius="50dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
